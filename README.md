@@ -24,6 +24,12 @@
 
 [Wechaty](https://github.com/wechaty/wechaty) 是一个针对 Chatbot 开发者提供的 Conversational SDK, 开发者通过6行代码即可快速搭建一个聊天机器人，支持[微信个人号](https://github.com/wechaty/wechaty-puppet-padplus)、[微信公众号](https://github.com/wechaty/wechaty-puppet-official-account)、钉钉、抖音、[WhatsApp](https://github.com/wechaty/wechaty-puppet-whatsapp)、Gitter(https://github.com/wechaty/wechaty-puppet-gitter) 等各大主流IM平台。项目支持 [JavaScript](https://github.com/Wechaty/wechaty), [Python](https://github.com/Wechaty/python-wechaty/), [Go](https://github.com/Wechaty/go-wechaty/), [Java](https://github.com/Wechaty/java-wechaty/) 等10种语言，同时可跨平台支持[Linux, Windows, MacOS](https://github.com/wechaty/wechaty/actions?query=workflow%3ANPM) 和 [Docker](https://github.com/wechaty/wechaty/actions?query=workflow%3ADocker).
 
+相关介绍：
+
+:octocat: <https://github.com/Wechaty/wechaty>  
+:beetle: <https://github.com/Wechaty/wechaty/issues>  
+:book: <https://github.com/Wechaty/wechaty/wiki>  
+:whale: <https://hub.docker.com/r/wechaty/wechaty>  
 
 值得注意的是，微信个人号功能非常强大和灵活，是一个非常适合用来做ChatBot的载体。它可以灵活不受限制的发送语音短信、视频、图片和文字，支持多人群聊。但是使用微信个人微信号作为ChatBot，需要通过非官方的第三方库接入微信。因为截至2018年底，微信尚无任何官方的ChatBot API发布。  
 
