@@ -60,8 +60,49 @@ Wechaty.instance()
 
 ### Conversational AI
 
+人工智能对话作为未来人机交互的入口，必然会成为未来一个非常大的热点，也会成为AI中发展的一个基础设置，通知能够为企业与其客户之间的自动对话提供动力。这些对话可以是基于文本或基于音频的，可以在任何消息传递或基于语音的通信平台上进行。
+
+人工智能技术已经发展到可以非常准确地模仿人类对话的水平。它们使用自然语言处理(NLP)来为这些类似人类的对话加油。它帮助它们理解语音、文本和意图，破译不同的语言，并像人类一样做出反应。比如当它遇到订阅酒店的询问时，它会问：“请问酒店的地点在哪里？”，“请问您准备什么时候入住？”等问题。此外一些对话AI技术非常先进，甚至可以理解上下文并给出个性化对话。
+
+但是，对话式人工智能的目的是什么?
+
+对话型人工智能的主要目的是自动化对话和客户互动，以提供准确的、24小时的支持，比如企业可以将这项技术用于内部各种自动化的流程中，能够减少人工成本，办事效率等。然而，这并不是对话式人工智能技术的唯一用途，还有更多的应用等着在未来得到验证。
 
 
 ### Wechaty + Conversational AI 实战
 
+Wechaty如何与人工智能对话结合起来呢？其实非常简单。同样只需要简单的几行代码就可以完成一个智能对话机器人。
 
+在此次案例当中，我们使用的是微软QnaMaker服务，快速搭建一个QA对话机器人。示例代码如下，详细内容请看[wechaty-qnamaker](https://github.com/wechaty/wechaty-qnamaker)：
+
+```typescript
+import { WechatyQnAMaker } from 'wechaty-qnamaker'
+
+const config = {
+  mention: true, // default true: require mention the bot in room.
+  room: true,
+  contact: true, // enable direct message.
+
+  /**
+   * Language of Questions & Score of Answers
+   */
+  language: 'english',
+  scoreThreshold: 50,   // minimum score for the answer
+
+  /**
+   * QnAMaker Service API
+   */
+  endpointKey: '705a3468-12bb-4e10-a314-7daa947f18d6',
+  knowledgeBaseId: '254e33ad-ca6d-405d-980d-dbd3615e2605',
+  resourceName: 'wechaty',
+}
+
+const QnAMakerPlugin = WechatyQnAMaker(config)
+
+const wechaty = new Wechaty()
+wechaty.use(QnAMakerPlugin)
+```
+
+上述代码中，使用的是wechaty社区中的一个插件，外加简单的配置即可完成与微软QnaMaker服务的连接。关于如何使用QnaMaker服务，可在[官网](https://www.qnamaker.ai/)查看详细使用文档。
+
+由此，一个简单的Wechaty + Covnersation AI 实践案例即可完成，是不是非常简单呢 ？ 感兴趣的同学和朋友们可去[wechaty](https://wechaty.js.org/)和[AnaMaker.ai](https://www.qnamaker.ai/)官网查看详细使用文档。
