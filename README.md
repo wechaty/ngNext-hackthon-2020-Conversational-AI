@@ -9,6 +9,7 @@
 大赛通过 [HackHub 网站](https://event.hackhub.cn/event/ng2020) 进行报名，按赛事要求经过海选和专家评比，最终获胜者将得到在 NG+ 开发者大会 2020 上分享的机会，并赢得丰厚的奖励。[HackHub 网站](https://event.hackhub.cn/event/ng2020) 上有详细的大赛主题、参赛对象、大赛安排、评分标准、赛事奖励、活动组织单位的介绍，可点击链接查看详细内容。
 
 本届大赛包括4个主题：
+
 - Angular
 - TensorFlow.js
 - Conversational AI
@@ -18,13 +19,13 @@
 
 人工智能的发展带动了对话式交互领域研究的深入，Chatbot 的应用场景越来越丰富。本次大赛希望参赛队伍发挥想象力和创新精神，发掘出多样的 Chatbot 人工智能落地应用，参赛项目将由 [Wechaty](https://wechaty.js.org/) 提供社区支持，[句子互动](https://www.juzibot.com/) 提供云服务的支持。
 
-### Wechaty 
+### Wechaty
 
 ![wechaty-logo](https://camo.githubusercontent.com/d9a57af0493282f9599725857ae7bcd85297a43c/68747470733a2f2f776563686174792e6a732e6f72672f696d672f776563686174792d6c6f676f2e737667)
 
-[Wechaty](https://github.com/wechaty/wechaty) 是一个针对 Chatbot 开发者提供的 Conversational SDK, 开发者通过6行代码即可快速搭建一个聊天机器人，支持[微信个人号](https://github.com/wechaty/wechaty-puppet-padplus)、[微信公众号](https://github.com/wechaty/wechaty-puppet-official-account)、钉钉、抖音、[WhatsApp](https://github.com/wechaty/wechaty-puppet-whatsapp)、Gitter(https://github.com/wechaty/wechaty-puppet-gitter) 等各大主流IM平台。项目支持 [JavaScript](https://github.com/Wechaty/wechaty), [Python](https://github.com/Wechaty/python-wechaty/), [Go](https://github.com/Wechaty/go-wechaty/), [Java](https://github.com/Wechaty/java-wechaty/) 等10种语言，同时可跨平台支持[Linux, Windows, MacOS](https://github.com/wechaty/wechaty/actions?query=workflow%3ANPM) 和 [Docker](https://github.com/wechaty/wechaty/actions?query=workflow%3ADocker).
+[Wechaty](https://github.com/wechaty/wechaty) 是一个针对 Chatbot 开发者提供的 Conversational SDK, 开发者通过6行代码即可快速搭建一个聊天机器人，支持[微信个人号](https://github.com/wechaty/wechaty-puppet-padplus)、[微信公众号](https://github.com/wechaty/wechaty-puppet-official-account)、钉钉、抖音、[WhatsApp](https://github.com/wechaty/wechaty-puppet-whatsapp)、[Gitter](https://github.com/wechaty/wechaty-puppet-gitter) 等各大主流IM平台。项目支持 [JavaScript](https://github.com/Wechaty/wechaty), [Python](https://github.com/Wechaty/python-wechaty/), [Go](https://github.com/Wechaty/go-wechaty/), [Java](https://github.com/Wechaty/java-wechaty/) 等10种语言，同时可跨平台支持[Linux, Windows, MacOS](https://github.com/wechaty/wechaty/actions?query=workflow%3ANPM) 和 [Docker](https://github.com/wechaty/wechaty/actions?query=workflow%3ADocker).
 
-相关介绍：
+#### 相关介绍
 
 :octocat: <https://github.com/Wechaty/wechaty>  
 :beetle: <https://github.com/Wechaty/wechaty/issues>  
@@ -50,13 +51,37 @@ Wechaty.instance()
 ```
 
 更多功能包括：
+
 - 消息处理：关键词回复
 - 群管理：自动入群，拉人，踢人
 - 自动处理好友请求
 - 智能对话：通过简单配置，即可加入智能对话系统，完成指定任务
 - ... 请自行开脑洞
 
-详情请看Wechaty项目，下面列出一些简单的基本功能    
+#### 更多资料
+
+- 英文文档(英文文档比中文文档更全): <https://wechaty.js.org/docs/introduction/README>
+- 中文文档：<https://wechaty.js.org/v/zh/>
+- 主项目地址：<https://github.com/wechaty/wechaty>
+- 快速开始：<https://github.com/wechaty/wechaty-getting-started>
+- 多语言版本（NodeJs 为主要维护语言，NodeJs 版本相对其他语言更强大）：
+  - Java地址（社区维护）：<https://github.com/wechaty/java-wechaty>
+  - Python地址（社区维护）：<https://github.com/wechaty/python-wechaty>
+  - Go地址（社区维护）：<https://github.com/wechaty/go-wechaty>
+  - Scala地址（社区维护）：<https://github.com/wechaty/scala-wechaty>
+  - donet地址（社区维护）：<https://github.com/wechaty/dotnet-wechaty>
+  - php地址（社区维护）：<https://github.com/wechaty/php-wechaty>
+- 官方主页：<https://wechaty.js.org/>
+- 新闻：<https://wechaty.js.org/news/>
+- 博客：<https://wechaty.js.org/blog/>
+- 获取Token 方式--句子互动的云服务支持：<https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty>
+- 个人微信接入：<https://github.com/juzibot/donut-tester>
+- 企业微信接入：<https://github.com/juzibot/wxwork-tester>
+- 视频
+  - [Wechaty 開源故事 (Azure Show 第一期), @huan, May 19, 2020](https://www.youtube.com/watch?v=YZ130iwcNSE&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=13)
+  - [Wechaty项目和社区生态介绍, @huan, May 30, 2020](https://www.youtube.com/watch?v=tfGZXoe_aA4&feature=youtu.be&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&t=385)
+  - [How to getting started with Multi-language Wechaty, @huan, Jun 19, 2020](https://www.youtube.com/watch?v=fluenDIHZec&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=17&t=6170)
+  - [Wechaty 快速开始 (Live Coding), @lijiarui, Jul 18, 2018](https://www.youtube.com/watch?v=KO23WAlnPHg&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=2)
 
 ### Conversational AI
 
@@ -68,6 +93,12 @@ Wechaty.instance()
 
 对话型人工智能的主要目的是自动化对话和客户互动，以提供准确的、24小时的支持，比如企业可以将这项技术用于内部各种自动化的流程中，能够减少人工成本，办事效率等。然而，这并不是对话式人工智能技术的唯一用途，还有更多的应用等着在未来得到验证。
 
+#### 相关资料
+
+- [如何编写聊天机器人，Jul 13, 2017](https://wechaty.js.org/2017/07/13/how-to-build-a-chatbot/)
+- [陆奇：Chatbot将成为未来的基础设施和重要的人机交互窗口](https://pre-angel.com/juzibot-chatbot-0-1/)
+- [AI与人，“替代”还是 “共生”](https://pre-angel.com/lijiarui-chatbot-0-1/)
+- [《Chatbot从0到1：对话式交互设计实践指南》](https://item.jd.com/12630213.html)
 
 ### Wechaty + Conversational AI 实战
 
@@ -106,3 +137,14 @@ wechaty.use(QnAMakerPlugin)
 上述代码中，使用的是wechaty社区中的一个插件，外加简单的配置即可完成与微软QnaMaker服务的连接。关于如何使用QnaMaker服务，可在[官网](https://www.qnamaker.ai/)查看详细使用文档。
 
 由此，一个简单的Wechaty + Covnersation AI 实践案例即可完成，是不是非常简单呢 ？ 感兴趣的同学和朋友们可去[wechaty](https://wechaty.js.org/)和[AnaMaker.ai](https://www.qnamaker.ai/)官网查看详细使用文档。
+
+#### 资料
+
+- wechaty-qnamaker plugin： <https://github.com/wechaty/wechaty-qnamaker>
+- wechaty qnamaker 实践项目： <https://github.com/juzibot/rui-bot>
+- 视频资料
+  - [Global AI Bootcamp 2019 - Beijing - 如何从0到1搭建 Chatbot, @lijiarui, Dec 22, 2019](https://www.youtube.com/watch?v=bdq8VNuHvVo&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=2)
+  - [Wechaty 從零開始 Live Coding with QnAMaker.ai (Azure Show第一期), @lijiarui, May 19, 2020](https://www.youtube.com/watch?v=ZYjYAT2g-1Q&list=PL8hd9KDTdarDXf_Rxtr8meKhxtgcXMInh&index=14)
+- 文章资料
+  - [如何用 QnAMaker.ai 构建一个投融资聊天机器人 - Azure Show](https://wechaty.js.org/2020/05/19/qnamaker-juzi-bot-for-investors-rui/)
+  - [MicroSoft Tech Summit-快速搭建一个聊天机器人 Luis.AI 和 Wechaty 实战](https://wechaty.js.org/2018/10/21/microsoft-hol/)
