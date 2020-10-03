@@ -17,6 +17,10 @@
 
 ## Conversational AI 学习资料
 
+- [Wechaty](#wechaty)
+- [Conversational AI](#conversational-ai)
+- [Wechaty + Conversational AI 实战](#wechaty--conversational-ai-实战)
+
 人工智能的发展带动了对话式交互领域研究的深入，Chatbot 的应用场景越来越丰富。本次大赛希望参赛队伍发挥想象力和创新精神，发掘出多样的 Chatbot 人工智能落地应用，参赛项目将由 [Wechaty](https://wechaty.js.org/) 提供社区支持，[句子互动](https://www.juzibot.com/) 提供云服务的支持。
 
 ### Wechaty
